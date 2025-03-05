@@ -21,6 +21,12 @@ const features = [
     description: 'Practice grammar with interactive exercises and instant feedback.',
     path: '/grammar',
   },
+  {
+    icon: <GraduationCap className="w-8 h-8" />,
+    title: 'Image Recognition',
+    description: 'Learn vocabulary with image recognition',
+    path: '/image',
+  },
 ];
 
 export default function Home() {

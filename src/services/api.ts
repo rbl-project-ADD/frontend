@@ -18,3 +18,12 @@ export const generateGrammarExercises = async (data: TranslationRequest) => {
   console.log(response.data);
   return response.data;
 };
+
+export const recognizeImage = async (data: FormData) => {
+  const response = await axios.post(`${API_BASE_URL}/translate/file`, data, {
+    headers: {
+      'Content-Type': 'multipart/form-data',
+    },
+  });
+  return response.data;
+}

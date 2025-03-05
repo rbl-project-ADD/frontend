@@ -5,6 +5,7 @@ import Translate from './pages/Translate';
 import Flashcards from './pages/Flashcards';
 import Grammar from './pages/Grammar';
 import { Book } from 'lucide-react';
+import ImageRecognition from './pages/ImageRecognition';
 
 function App() {
   return (
@@ -40,6 +41,12 @@ function App() {
                 >
                   Grammar
                 </Link>
+                <Link
+                  to="/image"
+                  className="inline-flex items-center px-1 pt-1 text-gray-900 hover:text-indigo-600"
+                >
+                  Image
+                </Link>
               </div>
             </div>
           </div>
@@ -51,6 +58,7 @@ function App() {
             <Route path="/translate" element={<Translate />} />
             <Route path="/flashcards" element={<Flashcards />} />
             <Route path="/grammar" element={<Grammar />} />
+            <Route path="/image" element={<ImageRecognition />} />
           </Routes>
         </main>
       </div>
