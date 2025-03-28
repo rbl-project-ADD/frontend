@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Book, Car as Cards, GraduationCap, Languages } from 'lucide-react';
+import { Book, Car as Cards, GraduationCap, Image, Languages } from 'lucide-react';
 
 const features = [
   {
@@ -22,7 +22,7 @@ const features = [
     path: '/grammar',
   },
   {
-    icon: <GraduationCap className="w-8 h-8" />,
+    icon: <Image className="w-8 h-8" />,
     title: 'Image Recognition',
     description: 'Learn vocabulary with image recognition',
     path: '/image',
